@@ -90,10 +90,6 @@ npm run preview
 
 ---
 
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
-
 # ⭐ Support
 
 If you like VISION_SYNC, don't forget to leave a ⭐ on GitHub.
@@ -101,6 +97,10 @@ If you like VISION_SYNC, don't forget to leave a ⭐ on GitHub.
 It helps the project grow.
 
 ---
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
 <div align="center">
 
 ## Made with ❤️ by ΛLΞX JΛMΞS
