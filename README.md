@@ -1,52 +1,91 @@
-# VibeViz - Real-time Facial Analysis & Sign Language Recognition
+# VibeViz
 
-VibeViz is a powerful React & Vite web application featuring real-time facial emotion tracking via MediaPipe and Gemini AI insights.
+> **Real-Time Computer Vision, Emotion Tracking & Sign Language Analytics**
+
+VibeViz is a high-performance web application built with **React**, **TypeScript**, **MediaPipe Tasks Vision**, and **Tailwind CSS**. It provides real-time multi-perspective analytics including 52-point facial blendshape emotion tracking and 21-point dual-hand gesture / sign language recognition.
 
 ---
 
-## 🚀 GitHub-এ সব ফাইল সহ পাবলিক করার সহজ নিয়ম (Auto Push Script)
+##  Features
 
-আগে শুধু `README.md` ফাইল যাওয়ার কারণ হলো প্রজেক্টের সব ফাইল একসঙ্গে Git-এ অ্যাড (Add) করা হয়নি। এখন থেকে **সব ফাইল একসাথে** খুব সহজে GitHub-এ পাঠাতে নিচের কমান্ডটি রান করুন:
+### 1. Emotion Mesh & Vibe Tracking
+- **52 Facial Blendshapes Detection**: Uses MediaPipe Face Landmarker with GPU acceleration to track precise micro-expressions.
+- **Dynamic Vibe Check Meter**: Real-time mood evaluation HUD floating above detected faces with smoothed transitions.
+- **Emotion Probability Meters**: Live visual breakdown of emotions including Smile, Laugh, Surprise, Fear, Anger, and Sadness.
+- **Custom Baseline Calibration**: Zero out resting facial muscle tension for accurate expression detection.
+- **Interactive Timeline**: Real-time scrolling chart of emotion and vibe metrics with customizable time windows (15s to 5m).
+
+### 2. Sign Language & Gesture Analytics
+- **Dual-Hand 21-Point Landmark Detection**: 3D normalized coordinate mapping for both hands in real-time.
+- **Gesture & Emoji Recognition**: Recognizes standard gestures including Peace (✌️), Thumbs Up (👍), OK (👌), Open Hand (🖐️), Fist (✊), Heart (🫶), Silence (🤫), Confused (😕), and Thinking (🤔).
+- **Interactive Animation Effects**: Real-time floating particle and emoji animations triggered upon active gesture execution.
+- **Activity Timeline**: Dynamic chart visualizing hand movement intensity and facial expressiveness over time.
+- **Video Upload Support**: Analyze pre-recorded video clips alongside live webcam streams with built-in playback controls.
+
+---
+
+## Tech Stack
+
+- **Framework**: [React 19](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Vision Models**: [@mediapipe/tasks-vision](https://developers.google.com/mediapipe/solutions/vision)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Charts**: [Recharts](https://recharts.org/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+
+---
+
+## Getting Started
+
+### Prerequisites
+- [Node.js](https://nodejs.org/) (version 18 or higher recommended)
+- A webcam for live video tracking (optional if uploading video files)
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/vibeviz.git
+   cd vibeviz
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Configure Environment Variables (Optional):**
+   Copy the example environment file:
+   ```bash
+   cp .env.example .env
+   ```
+
+4. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+   Open your browser and navigate to `http://localhost:3000`.
+
+---
+
+## Building for Production
+
+To create an optimized production build:
 
 ```bash
-bash push-to-github.sh
+npm run build
 ```
 
-অথবা ম্যানুয়ালি করতে চাইলে নিচের কমান্ডগুলো দিন:
-1. **সব ফাইল স্টেজ ও কমিট করুন:**
-   ```bash
-   git add .
-   git commit -m "Upload all project files"
-   ```
-2. **GitHub-এ রেপোজিটরি কানেক্ট করে পুশ করুন:**
-   ```bash
-   git branch -M main
-   git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
-   git push -u origin main
-   ```
+The output will be generated in the `dist/` directory.
 
----
+To preview the production build locally:
 
-## ☁️ Vercel-এ ডিপ্লয় করার গাইডলাইন (How to Deploy on Vercel)
-
-GitHub-এ কোড পুশ করার পর Vercel দিয়ে অটোমেটিক ডিপ্লয় করা অত্যন্ত সহজ:
-
-1. [Vercel Dashboard](https://vercel.com)-এ যান এবং আপনার GitHub অ্যাকাউন্ট দিয়ে লগইন করুন।
-2. **"Add New..." > "Project"** এ ক্লিক করুন।
-3. আপনার GitHub থেকে `vibeviz` রেপোজিটরি সিলেক্ট করুন (`Import`).
-4. **Configure Project** পেজে Vercel অটোমেটিক্যালি ফ্রেমওয়ার্ক ডিটেক্ট করবে (`Vite`).
-5. **Environment Variables** সেকশনে আপনার সিক্রেট বা এপিআই কি যুক্ত করুন:
-   - `GEMINI_API_KEY`: আপনার Gemini API Key (যদি প্রয়োজন হয়)।
-6. **"Deploy"** বাটনে ক্লিক করুন। 
-
-ব্যাস! আপনার প্রজেক্টটি লাইভ হয়ে যাবে এবং পরবর্তীতে GitHub-এ কোনো কোড পুশ করলেই Vercel অটোমেটিক সেটা আপডেট (Auto Deploy) করে নেবে।
-
----
-
-## 🛠️ Local Development
-
-প্রজেক্টটি লোকালি রান করতে চাইলে:
 ```bash
-npm install
-npm run dev
+npm run preview
 ```
+
+---
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
