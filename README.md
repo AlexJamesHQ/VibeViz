@@ -6,6 +6,10 @@ VibeViz is a high-performance web application built with **React**, **TypeScript
 
 ---
 
+### Live Demo
+[https://vibeviz-alex.vercel.app](https://vibeviz-alex.vercel.app)
+
+
 ##  Features
 
 ### 1. Emotion Mesh & Vibe Tracking
@@ -45,7 +49,7 @@ VibeViz is a high-performance web application built with **React**, **TypeScript
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/vibeviz.git
+   git clone https://github.com/AlexJamesHQ/VibeViz
    cd vibeviz
    ```
 
@@ -89,3 +93,15 @@ npm run preview
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).
+
+# ⭐ Support
+
+If you like VISION_SYNC, don't forget to leave a ⭐ on GitHub.
+
+It helps the project grow.
+
+---
+<div align="center">
+
+## Made with ❤️ by ΛLΞX JΛMΞS
+
