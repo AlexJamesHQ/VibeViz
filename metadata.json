@@ -1,6 +1,6 @@
 {
   "name": "VibeViz",
-  "description": "Real-time facial analysis and emotion tracking using MediaPipe and Gemini AI.",
+  "description": "Real-time facial analysis and emotion tracking using MediaPipe.",
   "requestFramePermissions": [
     "camera"
   ],
