@@ -3,7 +3,7 @@ echo "Adding all project files to git..."
 git add .
 
 echo "Committing changes..."
-git commit -m "Auto update: all project files synced from AI Studio"
+git commit -m "Auto update: all project files synced"
 
 echo "Pushing to GitHub (origin main)..."
 git push origin main
